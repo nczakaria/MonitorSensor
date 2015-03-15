@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyActivity"
+    tools:deviceIds="wear_square" android:padding="12dp">
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp" android:text="89" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/text_accelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp" android:text="ACC:" android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/text_magneticField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp" android:text="MAG:" />
+
+    <TextView
+        android:id="@+id/text_gyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp" android:text="GYR:" />
+
+    <TextView
+        android:id="@+id/text_heartrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp" android:text="HRT:" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:id="@+id/button"
+        android:onClick="showResults"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
